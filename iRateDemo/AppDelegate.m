@@ -17,7 +17,6 @@
 
 // iRate prefers to be configured before app launch
 + (void)initialize {
-    
     [iRate sharedInstance].daysUntilPrompt = 10;
     [iRate sharedInstance].usesUntilPrompt = 10;
     [iRate sharedInstance].remindPeriod = .5; // 12h. 1 == 1 day, aka 24h. use floats for fractional days
@@ -35,9 +34,10 @@
     
     BOOL debugMode = YES;
     if (debugMode) {
-        [iRate sharedInstance].applicationBundleID = @"com.facebook.Facebook"; // point away from staging bundle to real bundle, must point to an app store bundle
+        // point away from staging bundle to real bundle, must point to an app store bundle
+        [iRate sharedInstance].applicationBundleID = @"com.facebook.Facebook";
         [iRate sharedInstance].verboseLogging = YES; // it's auto set to YES by DEBUG configuration
-        [iRate sharedInstance].previewMode = YES; // app store dialog will always appear, all conditions are irrelevent.
+        [iRate sharedInstance].previewMode = YES; // rating dialog will always appear, all conditions are irrelevent.
     }
 }
 
@@ -64,13 +64,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [iRate sharedInstance].delegate = self;
     return YES;
 }
-
-- (void)applicationWillResignActive:(UIApplication *)application {}
-- (void)applicationDidEnterBackground:(UIApplication *)application {}
-- (void)applicationWillEnterForeground:(UIApplication *)application {}
-- (void)applicationDidBecomeActive:(UIApplication *)application {}
-- (void)applicationWillTerminate:(UIApplication *)application {}
 
 @end
