@@ -15,7 +15,6 @@
 		BE93446C1ADC22BB007F1294 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE93446A1ADC22BB007F1294 /* LaunchScreen.xib */; };
 		BE9344781ADC22BB007F1294 /* iRateDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9344771ADC22BB007F1294 /* iRateDemoTests.m */; };
 		BE9344851ADC22DC007F1294 /* iRate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9344831ADC22DC007F1294 /* iRate.m */; };
-		BE9344861ADC22DC007F1294 /* LICENCE.md in Sources */ = {isa = PBXBuildFile; fileRef = BE9344841ADC22DC007F1294 /* LICENCE.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -253,7 +252,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE9344861ADC22DC007F1294 /* LICENCE.md in Sources */,
 				BE9344641ADC22BB007F1294 /* ViewController.m in Sources */,
 				BE9344611ADC22BB007F1294 /* AppDelegate.m in Sources */,
 				BE93445E1ADC22BB007F1294 /* main.m in Sources */,
@@ -523,6 +521,7 @@
 				BE93447D1ADC22BB007F1294 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BE93447E1ADC22BB007F1294 /* Build configuration list for PBXNativeTarget "iRateDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +531,7 @@
 				BE9344801ADC22BB007F1294 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
